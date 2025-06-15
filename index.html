@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Portfolio</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-white text-gray-900 font-sans">
+    <!-- Hero Banner -->
+    <section
+      class="bg-gradient-to-b from-white to-gray-100 pt-12 pb-6 text-center px-4"
+    >
+      <h1
+        class="text-3xl md:text-6xl font-extrabold leading-tight tracking-tight"
+      >
+        EXPERIENCE THAT <span class="bg-lime-300 px-2">SPEAKS:</span><br />
+        <span class="text-blue-700">500+ CLIENTS SATISFIED!</span>
+      </h1>
+    </section>
+
+    <!-- Profile Section -->
+    <section
+      class="max-w-6xl mx-auto px-6 mt-10 flex flex-col md:flex-row gap-8"
+    >
+      <!-- Left Column -->
+      <div class="w-full md:w-1/4 text-center md:text-left">
+        <img
+          src="./img/profile.jpg"
+          class="w-36 h-36 rounded-full mx-auto md:mx-0 shadow-lg border-4 border-white"
+          alt=""
+        />
+        <div class="mt-2">
+          <span class="bg-blue-600 text-white text-xs px-2 py-1 rounded-full"
+            >PRO</span
+          >
+        </div>
+      </div>
+
+      <!-- Center Info -->
+      <div class="w-full md:w-3/4">
+        <div
+          class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6"
+        >
+          <!-- Identity & Availability -->
+          <div>
+            <h2 class="text-2xl font-bold font-Oswald">John Prop</h2>
+            <div class="mt-1 flex items-center gap-2">
+              <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+              <span class="text-green-600 text-sm font-medium"
+                >Available Now</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Bio and Contact Info -->
+        <div class="mt-4 text-sm text-gray-700 space-y-3">
+          <p class="font-mono font-semibold">
+            I’m John, a 3D artist with 3 years of experience in low-poly
+            modeling,<br />
+            3D print assets, game-ready environments, and product animation.
+            <br />
+            I focus on clean, optimized designs for real-time engines and <br />
+            high-quality renders.
+          </p>
+          <ul class="space-y-1">
+            <li>
+              <a
+                href="mailto:johnart935@gmail.com"
+                class="text-blue-600 underline"
+                >johnart935@gmail.com</a
+              >
+            </li>
+            <li><span class="text-blue-600 underline">Ekiti, Nigeria</span></li>
+          </ul>
+        </div>
+        <!-- Action Button -->
+        <div class="md:order-last">
+          <a href="">
+          <button
+            class="px-4 py-2 bg-blue-700 text-white rounded text-sm hover:bg-blue-800 transition mt-4"
+          >
+            Send Message
+          </button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab Navigation -->
+    <section class="max-w-6xl mx-auto mt-8 px-6">
+      <nav class="flex border-b border-gray-200 gap-6 text-sm font-semibold">
+        <a href="index.html" class="pb-2 border-b-2 border-black">Work</a>
+        <a href="services.html" class="text-gray-500 hover:text-black"
+          >Services</a
+        >
+        <a href="moodboard.html" class="text-gray-500 hover:text-black"
+          >Moodboards</a
+        >
+      </nav>
+    </section>
+
+    <!-- Services Section -->
+    <section class="max-w-6xl mx-auto px-6 py-6">
+      <div class="flex justify-between items-center mb-4">
+        <h3 class="text-lg font-bold">Services</h3>
+        <a href="services.html"
+          ><button class="text-sm text-gray-500 hover:underline">
+            View All
+          </button></a
+        >
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="bg-white border rounded shadow-sm overflow-hidden">
+          <img
+            src="./img/project1.jpg"
+            class="w-full h-40 object-cover"
+            alt=""
+          />
+          <div class="p-3 text-sm">
+            <p class="font-semibold">
+              Precision-crafted 3D printed helmet—designed for realism, built
+              for impact.
+            </p>
+            <button
+              onclick="location.href='helmet-details.html'"
+              class="mt-2 px-4 py-1 bg-blue-600 text-white rounded text-xs font-medium hover:bg-blue-800"
+            >
+              Inquire
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-white border rounded shadow-sm overflow-hidden">
+          <img src="img/project2.jpg" class="w-full h-40 object-cover" alt="" />
+          <div class="p-3 text-sm">
+            <p class="font-semibold">Precision-crafted 3D printed helmet—designed for realism, built
+              for impact.</p>
+            <button
+              onclick="location.href='human-details.html'"
+              class="mt-2 px-4 py-1 bg-blue-600 text-white rounded text-xs font-medium hover:bg-blue-800"
+            >
+              Inquire
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-white border rounded shadow-sm overflow-hidden">
+          <img src="project1.jpg" class="w-full h-40 object-cover" alt="" />
+          <div class="p-3 text-sm">
+            <p class="font-semibold">Design logo for your business</p>
+            <button
+              onclick="location.href='art-details.html'"
+              class="mt-2 px-4 py-1 bg-blue-600 text-white rounded text-xs font-medium hover:bg-blue-800"
+            >
+              Inquire
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-white border rounded shadow-sm overflow-hidden">
+          <img src="project1.jpg" class="w-full h-40 object-cover" alt="" />
+          <div class="p-3 text-sm">
+            <p class="font-semibold">Design logo for your business</p>
+            <button
+              onclick="location.href='art-details.html'"
+              class="mt-2 px-4 py-1 bg-blue-600 text-white rounded text-xs font-medium hover:bg-blue-800"
+            >
+              Inquire
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-white border rounded shadow-sm overflow-hidden">
+          <img src="" class="w-full h-40 object-cover" alt="" />
+          <div class="p-3 text-sm">
+            <p class="font-semibold">Design logo for your business</p>
+            <button
+              onclick="location.href='art-details.html'"
+              class="mt-2 px-4 py-1 bg-blue-600 text-white rounded text-xs font-medium hover:bg-blue-800"
+            >
+              Inquire
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-white border rounded shadow-sm overflow-hidden">
+          <img src="project1.jpg" class="w-full h-40 object-cover" alt="" />
+          <div class="p-3 text-sm">
+            <p class="font-semibold">Design logo for your business</p>
+            <button
+              onclick="location.href='art-details.html'"
+              class="mt-2 px-4 py-1 bg-blue-600 text-white rounded text-xs font-medium hover:bg-blue-800"
+            >
+              Inquire
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-white border rounded shadow-sm overflow-hidden">
+          <img src="project1.jpg" class="w-full h-40 object-cover" alt="" />
+          <div class="p-3 text-sm">
+            <p class="font-semibold">Design logo for your business</p>
+            <button
+              onclick="location.href='art-details.html'"
+              class="mt-2 px-4 py-1 bg-blue-600 text-white rounded text-xs font-medium hover:bg-blue-800"
+            >
+              Inquire
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-white border rounded shadow-sm overflow-hidden">
+          <img src="project1.jpg" class="w-full h-40 object-cover" alt="" />
+          <div class="p-3 text-sm">
+            <p class="font-semibold">Design logo for your business</p>
+            <button
+              onclick="location.href='art-details.html'"
+              class="mt-2 px-4 py-1 bg-blue-600 text-white rounded text-xs font-medium hover:bg-blue-800"
+            >
+              Inquire
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hire Me Fixed Badge -->
+    <div
+      class="fixed bottom-4 right-4 bg-black text-white px-4 py-3 rounded shadow-lg flex items-center space-x-4 z-50"
+    >
+      <img src="profile.jpg" alt="" class="w-10 h-10 rounded-full border" />
+      <div>
+        <div class="text-sm font-bold">John is available for hire</div>
+        <p class="text-xs text-green-400">
+          Availability: Now ∙ Responds quickly
+        </p>
+      </div>
+      <a href="">
+        <button class="ml-auto bg-white text-black text-sm px-3 py-1 rounded">
+          Hire John
+        </button>
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 text-gray-700 mt-12">
+      <div
+        class="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm"
+      >
+        <!-- About -->
+        <div>
+          <h4 class="font-bold text-gray-900 mb-2">About John</h4>
+          <p>
+            John is a 3D artist crafting low-poly models, game assets, and
+            animations. Available for freelance and collaboration.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="font-bold text-gray-900 mb-2">Quick Links</h4>
+          <ul class="space-y-1">
+            <li><a href="index.html" class="hover:text-blue-700">Work</a></li>
+            <li>
+              <a href="services.html" class="hover:text-blue-700">Services</a>
+            </li>
+            <li>
+              <a href="moodboard.html" class="hover:text-blue-700">Moodboard</a>
+            </li>
+            <li><a href="#" class="hover:text-blue-700">Hire Me</a></li>
+          </ul>
+        </div>
+
+        <!-- Socials -->
+        <div>
+          <h4 class="font-bold text-gray-900 mb-2">Connect</h4>
+          <ul class="flex gap-4">
+            <li>
+              <a href="#" class="hover:text-blue-700" aria-label="Instagram">
+                <i class="fab fa-whatsapp text-2xl"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-700" aria-label="X">
+                <i class="fab fa-x-twitter text-2xl"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-700" aria-label="Tiktok">
+                <i class="fab fa-tiktok text-2xl"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:johnart935@gmail.com"
+                class="hover:text-blue-700"
+                aria-label="Email"
+              >
+                <i class="fas fa-envelope text-2xl"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 text-center py-4 text-xs">
+        &copy; 2025 John Prop. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
