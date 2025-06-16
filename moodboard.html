@@ -16,7 +16,6 @@
       <h1 class="text-xl font-bold">John Prop</h1>
       <nav class="space-x-4 text-sm">
         <a href="index.html" class="hover:text-blue-700">Home</a>
-        <a href="services.html" class="hover:text-blue-700">Services</a>
         <a href="moodboard.html" class="text-blue-700 font-semibold">Moodboards</a>
       </nav>
     </div>
@@ -29,16 +28,80 @@
   </section>
 
   <!-- Moodboard Gallery -->
-  <section class="max-w-6xl mx-auto px-6 py-10 grid grid-cols-2 md:grid-cols-4 gap-4">
-    <img src="./img/mood1.jpg" alt="Mood 1" class="w-full h-40 object-cover rounded shadow" />
-    <img src="./img/mood2.jpg" alt="Mood 2" class="w-full h-40 object-cover rounded shadow" />
-    <img src="./img/mood3.jpg" alt="Mood 3" class="w-full h-40 object-cover rounded shadow" />
-    <img src="./img/mood4.jpg" alt="Mood 4" class="w-full h-40 object-cover rounded shadow" />
-    <img src="./img/mood5.jpg" alt="Mood 5" class="w-full h-40 object-cover rounded shadow" />
-    <img src="./img/mood6.jpg" alt="Mood 6" class="w-full h-40 object-cover rounded shadow" />
-    <img src="./img/mood7.jpg" alt="Mood 7" class="w-full h-40 object-cover rounded shadow" />
-    <img src="./img/mood8.jpg" alt="Mood 8" class="w-full h-40 object-cover rounded shadow" />
-  </section>
+  <section class=" bg-gray-400 max-w-6xl mx-auto px-6 py-10 grid grid-cols-2 md:grid-cols-4 gap-4">
+
+  <div onclick="openModal(this.querySelector('img').src)"  class="relative group overflow-hidden rounded shadow h-40">
+    <img src="./img/profile.jpg" alt="Mood 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+      <p class="text-white text-sm">Amoured Dragon</p>
+    </div>
+  </div>
+
+  <div onclick="openModal(this.querySelector('img').src)"  class="relative group overflow-hidden rounded shadow h-40">
+    <img src="./img/project1.jpg" alt="Mood 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+      <p class="text-white text-sm">3D printed Helmet</p>
+    </div>
+  </div>
+
+  <div onclick="openModal(this.querySelector('img').src)"  class="relative group overflow-hidden rounded shadow h-40">
+    <img src="./img/paw.jpg" alt="Mood 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+      <p class="text-white text-sm">A custom 3D design</p>
+    </div>
+  </div>
+
+  <div onclick="openModal(this.querySelector('img').src)"  class="relative group overflow-hidden rounded shadow h-40">
+    <img src="./img/project3.jpg" alt="Mood 4" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+      <p class="text-white text-sm">3D image of Jesus</p>
+    </div>
+  </div>
+
+  <div onclick="openModal(this.querySelector('img').src)"  class="relative group overflow-hidden rounded shadow h-40">
+    <img src="./img/project4.jpg" alt="Mood 5" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+      <p class="text-white text-sm">Custom airplane</p>
+    </div>
+  </div>
+
+  <div onclick="openModal(this.querySelector('img').src)"  class="relative group overflow-hidden rounded shadow h-40">
+    <img src="./img/mood6.jpg" alt="Mood 6" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+      <p class="text-white text-sm">3D printed house</p>
+    </div>
+  </div>
+
+  <div onclick="openModal(this.querySelector('img').src)"  class="relative group overflow-hidden rounded shadow h-40">
+    <img src="./img/mood7.jpg" alt="Mood 7" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+      <p class="text-white text-sm">3D printed Anime</p>
+    </div>
+  </div>
+
+  <div onclick="openModal(this.querySelector('img').src)"  class="relative group overflow-hidden rounded shadow h-40">
+    <img src="./img/mood8.jpg" alt="Mood 8" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+      <p class="text-white text-sm">Custom Character</p>
+    </div>
+  </div>
+
+  <div onclick="openModal(this.querySelector('img').src)"  class="relative group overflow-hidden rounded shadow h-40">
+    <img src="./img/mood9.jpg" alt="Mood 9" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+      <p class="text-white text-sm">3D printed Cart</p>
+    </div>
+  </div>
+
+  <div onclick="openModal(this.querySelector('img').src)"  class="relative group overflow-hidden rounded shadow h-40">
+    <img src="./img/mood10.jpg" alt="Mood 10" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+      <p class="text-white text-sm">3D printed swordsman</p>
+    </div>
+  </div>
+
+</section>
+
 
   <!-- Footer -->
     <footer class="bg-gray-100 text-gray-700 mt-12">
@@ -62,9 +125,6 @@
               <a href="index.html" class="hover:text-blue-700">Home</a>
             </li>
             <li><a href="index.html" class="hover:text-blue-700">Work</a></li>
-            <li>
-              <a href="services.html" class="hover:text-blue-700">Services</a>
-            </li>
             <li><a href="#" class="hover:text-blue-700">Hire Me</a></li>
           </ul>
         </div>
@@ -106,5 +166,32 @@
       </div>
     </footer>
 
+    <!-- Modal -->
+        <div
+          id="imgModal"
+          class="fixed inset-0 bg-black bg-opacity-80 items-center justify-center hidden z-50"
+        >
+          <span
+            onclick="closeModal()"
+            class="absolute top-4 right-6 text-white text-3xl cursor-pointer"
+            >&times;</span
+          >
+          <img
+            id="modalImage"
+            src=""
+            class="max-w-full max-h-full rounded shadow-lg"
+          />
+        </div>
+
+        <!-- Script -->
+        <script>
+          function openModal(src) {
+            document.getElementById("modalImage").src = src;
+            document.getElementById("imgModal").classList.remove("hidden");
+          }
+          function closeModal() {
+            document.getElementById("imgModal").classList.add("hidden");
+          }
+        </script>
 </body>
 </html>
