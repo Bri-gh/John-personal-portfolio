@@ -1,287 +1,337 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>John Portfolio</title>
-    <link href="./output.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-  </head>
-  <body class="bg-neutral-950 text-gray-400 font-sans">
-    <!-- Hero Banner -->
-    <section
-      class="bg-gradient-to-b from-white to-gray-300 pt-12 pb-6 text-center px-4"
-    >
-      <h1
-        class="text-3xl md:text-6xl font-extrabold leading-tight tracking-tight"
-      >
-        EXPERIENCE THAT <span class="bg-lime-300 px-2">SPEAKS:</span><br />
-        <span class="text-blue-700">500+ CLIENTS SATISFIED!</span>
-      </h1>
-    </section>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bright | Frontend Web Designer</title>
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <!-- Profile Section -->
-    <section
-      class="max-w-6xl mx-auto px-6 mt-10 flex flex-col md:flex-row gap-8"
-    >
-      <!-- Left Column -->
-      <div class="w-full md:w-1/4 text-center md:text-left">
-        <img
-          src="./img/profile.jpg"
-          class="w-36 h-36 rounded-full mx-auto md:mx-0 shadow-lg border-4 border-white"
-          alt=""
-        />
-        <div class="mt-2">
-          <span class="bg-blue-600 text-white text-xs px-2 py-1 rounded-full"
-            >PRO</span
-          >
-        </div>
-      </div>
+</head>
+<style>
+    .fade-in-left {
+      opacity: 0;
+      transform: translateX(-50px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      will-change: opacity, transform;
+    }
+    .fade-in-top {
+      opacity: 0;
+      transform: translateY(-50px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .visible {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 100;
+    }
+  </style>
+</head>
+<body class="bg-gray-950 text-white font-sans">
+  <!-- Navbar -->
+  <header class="bg-gray-900 py-4 shadow fixed w-full z-50">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-blue-400">DevBright</h1>
 
-      <!-- Center Info -->
-      <div class="w-full md:w-3/4">
-        <div
-          class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6"
-        >
-          <!-- Identity & Availability -->
-          <div>
-            <h2 class="text-2xl font-bold font-Oswald text-teal-500">John Prop</h2>
-            <div class="mt-1 flex items-center gap-2">
-              <span class="w-2 h-2 bg-green-500 rounded-full"></span>
-              <span class="text-green-600 text-sm font-medium"
-                >Available Now</span
-              >
-            </div>
-          </div>
-        </div>
+      <!-- Hamburger Button -->
+<button id="menu-toggle" class="md:hidden flex flex-col justify-between w-6 h-6 focus:outline-none">
+  <span class="line h-0.5 bg-blue-700 transition duration-300 origin-left"></span>
+  <span class="line h-0.5 bg-white transition duration-300"></span>
+  <span class="line h-0.5 bg-blue-700 transition duration-300 origin-left"></span>
+</button>
 
-        <!-- Bio and Contact Info -->
-        <div class="mt-4 text-sm text-gray-300 space-y-3">
-          <p class="font-mono font-semibold">
-            I’m John, a 3D artist with 3 years of experience in low-poly
-            modeling,<br />
-            3D print assets, game-ready environments, and product animation.
-            <br />
-            I focus on clean, optimized designs for real-time engines and <br />
-            high-quality renders.
-          </p>
-          <ul class="space-y-1">
-            <li>
-              <a
-                href="mailto:johnart935@gmail.com"
-                class="text-teal-600"
-                >johnart935@gmail.com</a
-              >
-            </li>
-          </ul>
-        </div>
-        <!-- Action Button -->
-        <div class="md:order-last">
-          <a href="https://t.me/@Jonhw3b">
-          <button
-            class="px-4 py-2 bg-green-600 text-white rounded text-sm hover:bg-green-700 transition mt-4"
-          >
-            Send Message
-          </button>
-          </a>
-        </div>
-      </div>
-    </section>
 
-    <!-- Tab Navigation -->
-    <section class="max-w-6xl mx-auto mt-8 px-6">
-      <nav class="flex border-b border-gray-200 gap-6 text-sm font-semibold">
-        <a href="index.html" class="pb-2 border-b-2 border-">Work</a>
-        <a href="moodboard.html" class="text-gray-300 hover:text-white"
-          >Moodboards</a
-        >
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex space-x-6 text-sm">
+        <a href="#home" class="hover:text-blue-400 transition">Home</a>
+        <a href="#about" class="hover:text-blue-400 transition">About</a>
+        <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+        <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
       </nav>
-    </section>
-
-    <!-- Services Section -->
-    <section class="max-w-6xl mx-auto px-6 py-6">
-      <div class="flex justify-between items-center mb-4">
-        <h3 class="text-lg font-bold text-teal-500">Services</h3>
-        <a href="moodboard.html"
-          ><button class="text-sm text-gray-400 hover:text-gray-300">
-            View All
-          </button></a
-        >
-      </div>
-
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-        <div class="bg-gray-500 border rounded shadow-sm overflow-hidden">
-          <img
-            src="./img/project1.jpg"
-            class="w-full h-40 object-cover"
-            alt=""
-          />
-          <div class="p-3 text-sm">
-            <p class="font-semibold text-gray-200">
-              Precision-Crafted 3D printed helmet built for display,cosplay or production
-            </p>
-            <button
-              onclick="location.href='helmet-details.html'"
-              class="mt-2 px-4 py-1 bg-teal-600 text-white rounded text-xs font-medium hover:bg-teal-700"
-            >
-              Inquire
-            </button>
-          </div>
-        </div>
-
-        <div class="bg-gray-500 border rounded shadow-sm overflow-hidden">
-          <img src="img/project2.jpg" class="w-full h-40 object-cover" alt="" />
-          <div class="p-3 text-sm">
-            <p class="font-semibold text-gray-200"> Realistic 3D printed Human bust  fine anatomical details and smooth finish .</p>
-            <button
-              onclick="location.href='human-details.html'"
-              class="mt-2 px-4 py-1 bg-teal-600 text-white rounded text-xs font-medium hover:bg-teal-700"
-            >
-              Inquire
-            </button>
-          </div>
-        </div>
-
-        <div class="bg-gray-500 border rounded shadow-sm overflow-hidden">
-          <img src="./img/project3.jpg" class="w-full h-40 object-cover" alt="" />
-          <div class="p-3 text-sm">
-            <p class="font-semibold text-gray-200">Deatailed 3D printed sculpture of Jesus,designed for art or display</p>
-            <button
-              onclick="location.href='jesus-details.html'"
-              class="mt-2 px-4 py-1 bg-teal-600 text-white rounded text-xs font-medium hover:bg-teal-700"
-            >
-              Inquire
-            </button>
-          </div>
-        </div>
-
-        <div class="bg-gray-500 border rounded shadow-sm overflow-hidden">
-          <img src="img/project4.jpg" class="w-full h-40 object-cover" alt="" />
-          <div class="p-3 text-sm">
-            <p class="font-semibold text-gray-200">High-precision 3D airplane model, perfect for display or aerodynamics demos</p>
-            <button
-              onclick="location.href='airplane-details.html'"
-              class="mt-2 px-4 py-1 bg-teal-600 text-white rounded text-xs font-medium hover:bg-teal-700"
-            >
-              Inquire
-            </button>
-          </div>
-        </div>
-
-        <div class="bg-gray-500 border rounded shadow-sm overflow-hidden">
-          <img src="img/project5.jpg" class="w-full h-40 object-cover" alt="" />
-          <div class="p-3 text-sm">
-            <p class="font-semibold text-gray-200">Armored dragon 3D print model with dynamic pose and sculpted detail</p>
-            <button
-              onclick="location.href='dragon-details.html'"
-              class="mt-2 px-4 py-1 bg-teal-600 text-white rounded text-xs font-medium hover:bg-teal-700"
-            >
-              Inquire
-            </button>
-          </div>
-        </div>
-
-        <div class="bg-gray-500 border rounded shadow-sm overflow-hidden">
-          <img src="img/paw.jpg" class="w-full h-40 object-cover" alt="" />
-          <div class="p-3 text-sm">
-            <p class="font-semibold text-gray-200">Explore more featured 3D <br>artworks in the full gallery</p>
-            <button
-              onclick="location.href='moodboard.html'"
-              class="mt-2 px-4 py-1 bg-teal-600 text-white rounded text-xs font-medium hover:bg-teal-700"
-            >
-              Explore
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Hire Me Fixed Badge -->
-    <div
-      class="fixed bottom-4 right-4 bg-gray-300 px-4 py-3 rounded shadow-lg flex items-center space-x-4 z-50"
-    >
-      <img src="profile.jpg" alt="" class="w-10 h-10 rounded-full border" />
-      <div>
-        <div class="text-sm font-bold text-black">John is available for hire</div>
-        <p class="text-xs text-green-500">
-          Availability: Now ∙ Responds quickly
-        </p>
-      </div>
-      <a href="https://t.me/@Jonhw3b">
-        <button class="ml-auto bg-gray-400 text-black text-sm px-3 py-1 rounded">
-          Hire John
-        </button>
-      </a>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-200 text-gray-700 mt-12">
-      <div
-        class="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm"
-      >
-        <!-- About -->
-        <div>
-          <h4 class="font-bold text-gray-900 mb-2">About John</h4>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+  class="md:hidden px-4 pb-4 pt-2 space-y-2 bg-gray-800 text-sm text-white transform transition-all duration-300 scale-y-0 origin-top hidden">
+  <a href="#home" class="block hover:text-blue-400 transition">Home</a>
+  <a href="#about" class="block hover:text-blue-400 transition">About</a>
+  <a href="#projects" class="block hover:text-blue-400 transition">Projects</a>
+  <a href="#contact" class="block hover:text-blue-400 transition">Contact</a>
+</div>
+
+  </header> 
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-[#0b132b] min-h-screen flex items-center justify-center flex-col md:flex-row justify-between px-6 md:px-20 py-10 gap-10 pt-32">
+    <!-- Image Section -->
+    <div class="relative">
+      <div class="w-64 h-64 rounded-full overflow-hidden border-4 border-white z-10 relative">
+        <img src="./img/me.jpg" alt="Johnson Bright" class="w-full h-full object-cover" />
+      </div>
+      <div class="absolute top-0 left-0 w-64 h-64 rounded-full bg-gradient-to-br from-blue-900 to-blue-700 opacity-30 z-0 animate-pulse"></div>
+    </div>
+
+    <!-- Text Content -->
+    <div class="max-w-xl">
+      <h1 class="text-3xl md:text-5xl font-bold mb-4">Hi, I'm Johnson Bright</h1>
+      <p class="text-lg text-gray-300 mb-6">
+        A passionate Web Developer. I create fast, responsive, and visually appealing and stunning websites. Let’s build something amazing!
+      </p>
+      <div class="flex gap-4">
+        <a href="#projects" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-md shadow-md transition">View Projects</a>
+        <a href="#contact" class="border border-white text-white px-6 py-3 rounded-md hover:bg-white hover:text-[#0b132b] transition">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+<section id="about" class="bg-[#0b1120] py-20 text-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-semibold text-center mb-12">About Me</h2>
+    <div class="md:flex md:items-center md:gap-12">
+      <!-- Image -->
+      <div class="md:w-1/2 mb-8 md:mb-0">
+        <img src="./img/dev.jpg" alt="Developer Desk Setup" class="rounded-2xl w-full object-contain" />
+      </div>
+      <!-- Text -->
+      <div class="md:w-1/2 text-lg text-gray-300 leading-relaxed">
+        <p>
+          With years of experience in Web Development. I specialize in creating and crafting responsive, accessible, and performance-based websites. My passion lies in translating complex problems into simple, beautiful, and intuitive interface designs.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Skills Section -->
+<section class="bg-[#0b1120] py-20 text-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <h3 class="text-3xl font-semibold text-center mb-12">Skills & Expertise</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Frontend -->
+      <div class="bg-[#0f172a] p-6 rounded-xl shadow">
+        <h4 class="text-xl font-semibold mb-4">Frontend</h4>
+        <div class="mb-4">
+          <label class="flex justify-between text-sm">HTML/CSS <span>95%</span></label>
+          <div class="h-2 bg-white/20 rounded">
+            <div class="h-full bg-indigo-500 rounded w-[95%]"></div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label class="flex justify-between text-sm">JavaScript <span>80%</span></label>
+          <div class="h-2 bg-white/20 rounded">
+            <div class="h-full bg-indigo-500 rounded w-[80%]"></div>
+          </div>
+        </div>
+        <div class="mb-2">
+          <label class="flex justify-between text-sm">React <span>70%</span></label>
+          <div class="h-2 bg-white/20 rounded">
+            <div class="h-full bg-indigo-500 rounded w-[70%]"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Frameworks & Libraries -->
+      <div class="bg-[#0f172a] p-6 rounded-xl shadow">
+        <h4 class="text-xl font-semibold mb-4">Frameworks & Libraries</h4>
+        <div class="mb-4">
+          <label class="flex justify-between text-sm">Bootstrap <span>85%</span></label>
+          <div class="h-2 bg-white/20 rounded">
+            <div class="h-full bg-green-500 rounded w-[85%]"></div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label class="flex justify-between text-sm">Tailwind CSS <span>75%</span></label>
+          <div class="h-2 bg-white/20 rounded">
+            <div class="h-full bg-green-500 rounded w-[75%]"></div>
+          </div>
+        </div>
+        <div class="mb-2">
+          <label class="flex justify-between text-sm">jQuery <span>75%</span></label>
+          <div class="h-2 bg-white/20 rounded">
+            <div class="h-full bg-green-500 rounded w-[75%]"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Extras -->
+      <div class="bg-[#0f172a] p-6 rounded-xl shadow">
+        <h4 class="text-xl font-semibold mb-4">Extra's</h4>
+        <div class="mb-4">
+          <label class="flex justify-between text-sm">Git <span>80%</span></label>
+          <div class="h-2 bg-white/20 rounded">
+            <div class="h-full bg-green-500 rounded w-[80%]"></div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label class="flex justify-between text-sm">Github <span>85%</span></label>
+          <div class="h-2 bg-white/20 rounded">
+            <div class="h-full bg-green-500 rounded w-[85%]"></div>
+          </div>
+        </div>
+        <div class="mb-2">
+          <label class="flex justify-between text-sm">Responsive Design <span>90%</span></label>
+          <div class="h-2 bg-white/20 rounded">
+            <div class="h-full bg-green-500 rounded w-[90%]"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Projects -->
+    <section id="projects" class="py-20 bg-gray-950">
+      <div class="max-w-6xl mx-auto px-4">
+        <h3 class="text-2xl font-semibold mb-10 text-center text-white">Featured Projects</h3>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-gray-800 p-4 rounded-lg shadow hover:shadow-lg transition">
+           <a href="https://bri-gh.github.io/SLEK-LUXURY-FOOTWEAR/"><div class="h-40 bg-gray-700 rounded mb-4 "><img src="./img/SLEK.png" alt="SLEK-LUXURY-FOOTWEAR" class=" w-full object-contain" /></div>
+            <h4 class="text-lg font-semibold mb-2 text-white">SLEK Footwear Website</h4>
+            <p class="text-gray-400 text-sm">Basic frontend project showcasing layout,responsiveness and mordern designs.</p>
+          </div></a>
+
+          <div class="bg-gray-800 p-4 rounded-lg shadow hover:shadow-lg transition">
+            <a href="https://bri-gh.github.io/John-personal-portfolio/"><div class="h-40 bg-gray-700 rounded mb-4"><img src="./img/Portfolio.jpg" alt="Portfolio Website" class="w-full object-contain"></div>
+            <h4 class="text-lg font-semibold mb-2 text-white">3d Portfolio</h4>
+            <p class="text-gray-400 text-sm">A Static Portfolio built using HTML, CSS, and JavaScript.</p>
+          </div></a>
+          
+          <div class="bg-gray-800 p-4 rounded-lg shadow hover:shadow-lg transition">
+            <a href="https://bri-gh.github.io/John-personal-portfolio/"><div class="h-40 bg-gray-700 rounded mb-4"><img src="./img/Portfolio.jpg" alt="Portfolio Website" class="w-full object-contain"></div>
+            <h4 class="text-lg font-semibold mb-2 text-white">3d Portfolio</h4>
+            <p class="text-gray-400 text-sm">A Static Portfolio built using HTML, CSS, and JavaScript.</p>
+          </div></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    
+<section id="contact" class="bg-[#0b1120] text-white py-20 px-4">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-12">
+
+    <div>
+          <h4 class="font-bold text-blue-900 mb-2">About Bright</h4>
           <p>
-            John is a 3D artist crafting low-poly models, game assets, and
-            animations. Available for freelance and collaboration.🚀
+            Bright is a frontend web developer passionate <br>about building clean, responsive, and user-friendly <br>websites. With a strong grasp of HTML, CSS, JavaScript,<br> and modern frameworks, he turns ideas into <br>engaging digital experiences.
           </p>
         </div>
+    
+    <!-- Left Column: Contact Info -->
+<div class="md:w-1/2 space-y-6 flex flex-col sm:flex-row sm:gap-12">
+  <!-- Contact Info -->
+  <div>
+    <h3 class="text-3xl font-semibold mb-4">Get In Touch</h3>
+    <div class="flex items-center gap-3 mb-2">
+      <i class="fas fa-envelope text-blue-400"></i>
+      <a href="mailto:brightdev44@gmail.com" class="text-blue-600 underline">brightdev44@gmail.com</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <i class="fas fa-map-marker-alt text-blue-400"></i>
+      <span>Ogun, Nigeria</span>
+    </div>
+  </div>
 
-        <!-- Quick Links -->
-        <div>
-          <h4 class="font-bold text-gray-900 mb-2">Quick Links</h4>
-          <ul class="space-y-1">
-            <li><a href="index.html" class="hover:text-blue-700">Work</a></li>
-            <li>
-              <a href="moodboard.html" class="hover:text-blue-700">Moodboard</a>
-            </li>
-            <li><a href="https://t.me/@Jonhw3b" class="hover:text-blue-700">Hire Me</a></li>
-          </ul>
-        </div>
+  <!-- Social Links -->
+  <div>
+    <h4 class="text-xl font-semibold mb-2">Connect</h4>
+    <div class="flex gap-4 text-2xl">
+      <a href="https://t.me/BrighW3b" target="_blank" class="hover:text-blue-400" aria-label="Telegram">
+        <i class="fab fa-telegram"></i>
+      </a>
+      <a href="https://wa.me/2347068378524" target="_blank" class="hover:text-green-500" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://x.com/Johnson4861952" target="_blank" class="hover:text-blue-400" aria-label="X / Twitter">
+        <i class="fab fa-x-twitter"></i>
+      </a>
+    </div>
+  </div>
+</div>
 
-        <!-- Socials -->
-        <div>
-          <h4 class="font-bold text-gray-900 mb-2">Connect</h4>
-          <ul class="flex gap-4">
-            <li>
-              <a href="https://wa.me/2349128725187" class="hover:text-blue-700" aria-label="Instagram">
-                <i class="fab fa-whatsapp text-2xl"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/JFluxx1" class="hover:text-blue-700" aria-label="X">
-                <i class="fab fa-x-twitter text-2xl"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-blue-700" aria-label="Tiktok">
-                <i class="fab fa-tiktok text-2xl"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="mailto:johnart935@gmail.com"
-                class="hover:text-blue-700"
-                aria-label="Email"
-              >
-                <i class="fas fa-envelope text-2xl"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+    
+  </div>
+</section>
+<!-- WhatsApp Button -->
+  <a href="https://wa.me/2347068378524" target="_blank" class="whatsapp-float">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="w-12 h-12 hover:scale-110 transition"/>
+  </a>
 
-      <div class="bg-gray-200 text-center py-4 text-xs">
-        &copy; 2025 John Prop. All rights reserved.
-      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 py-6 text-center text-sm text-gray-500">
+      &copy; 2025 Bright Portfolio. All rights reserved.
     </footer>
-  </body>
+  <!-- Toggle Script placed here -->
+ <script defer>
+  document.addEventListener('DOMContentLoaded', () => {
+    const toggleBtn = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const lines = toggleBtn.querySelectorAll('.line');
+
+    toggleBtn.addEventListener('click', () => {
+      const isHidden = mobileMenu.classList.contains('hidden');
+
+      if (isHidden) {
+        mobileMenu.classList.remove('hidden');
+        setTimeout(() => mobileMenu.classList.remove('scale-y-0'), 10);
+      } else {
+        mobileMenu.classList.add('scale-y-0');
+        setTimeout(() => mobileMenu.classList.add('hidden'), 300);
+      }
+
+      // Animate hamburger to X
+      lines[0].classList.toggle('rotate-45');
+      lines[0].classList.toggle('translate-y-2');
+
+      lines[1].classList.toggle('opacity-0');
+
+      lines[2].classList.toggle('-rotate-45');
+      lines[2].classList.toggle('-translate-y-2');
+    });
+  });
+</script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('section, .relative, img').forEach(el => {
+    const isImage = el.tagName === 'IMG';
+    el.classList.add(isImage ? 'fade-in-top' : 'fade-in-left');
+    observer.observe(el);
+  });
+});
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('section, .relative, .md\\:w-1/2 img').forEach(el => {
+      const isImage = el.tagName === 'IMG';
+      el.classList.add(isImage ? 'fade-in-top' : 'fade-in-left');
+      observer.observe(el);
+    });
+  </script>
+</body>
 </html>
